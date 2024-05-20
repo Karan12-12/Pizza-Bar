@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
-var mongoURL =
-  "mongodb+srv://yadavkaran471:UodgikBSn4hL8ojT@cluster0.67r13yb.mongodb.net/pizza-db";
+var mongoURL = process.env.MONGO_CONNECTION_URL;
 
 mongoose.connect(mongoURL);
 
